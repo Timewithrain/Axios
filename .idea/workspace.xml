@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5a9db9e1-61c2-44de-9857-a5c7f3677d42" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\DevelopeKit_Java\Maven\apache-maven-3.6.2-bin\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZG3r6hYBJ4ACpZpeiJa3utu178" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a9db9e1-61c2-44de-9857-a5c7f3677d42" name="Default Changelist" comment="" />
+      <created>1584451799834</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584451799834</updated>
+      <workItem from="1584451814297" duration="392000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="422" y="104" key="FileChooserDialogImpl" timestamp="1584452196394">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="422" y="104" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1584452196394" />
+    <state x="324" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1584451824547">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="324" y="205" key="com.intellij.ide.util.TipDialog/0.0.1280.760@0.0.1280.760" timestamp="1584451824547" />
+    <state x="6" y="63" key="new project wizard" timestamp="1584452204225">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="6" y="63" key="new project wizard/0.0.1280.760@0.0.1280.760" timestamp="1584452204225" />
+  </component>
+</project>
