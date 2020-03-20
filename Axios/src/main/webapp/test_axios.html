@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>axios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <style>
+        .back-color{
+            background-color: #c3cdef !important;
+        }
+        .top-20{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body style="background-color: #d0d7f1;">
+    <div id="app">
+        <div class="ui container">
+            <div class="ui grid"  style="margin-top: 30px;">
+                <div class="eight wide column" style="margin: auto;">
+                    <div class="ui segment back-color">
+                        <button class="ui teal button" onclick="getGet()">GET</button>
+                        <button class="ui blue button" onclick="getPost()">POST</button>
+                        <button class="ui orange button" onclick="getConcurrence()">Concurrence</button>
+                        <button class="ui violet button" onclick="yapiGET()">YapiGET</button>
+                        <button class="ui pink button" onclick="yapiPOST()">YapiPOST</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function getGet(){
+            axios.get("http://localhost:8888/axios/get?username=dabai&age=123",{
+                timeout: 2000
+            }).then(function (response){
+                console.log(response);
+            })
+            .catch(function (err){
+                console.log(err);
+            });
+        }
+        function getPost(){
+            //采用字符串方式发送数据
+            axios.post("http://localhost:8888/axios/postStr",
+                "username=大白&age=123"
+            );
+
+            //采用对象方式发送数据
+            // axios.post("http://localhost:8888/axios/post",{
+            //     username : "大白",
+            //     age : 21
+            // }).then(function (res){
+            //     console.log(res);
+            // }).catch(function (err){
+            //     console.log(err);
+            // });
+        }
+
+        function conGet(){
+            return axios.get("http://localhost:8888/axios/get?username=大白&age=123");
+        }
+
+        function conPost(){
+            return axios.post("http://localhost:8888/axios/post",{
+                username : "大白",
+                age : 21
+            });
+        }
+
+        function getConcurrence(){
+            axios.all([conGet(),conPost()]).then(
+                //统一用于处理多个并发请求的结果
+                axios.spread(function (res1,res2){
+                    console.log(res1.data);
+                    console.log(res2.data);
+                })
+            );
+        }
+
+        function yapiGET(){
+            axios.get("http://yapi.demo.qunar.com/mock/90301/axios/get").then(function (res){
+                console.log(res.data);
+            });
+        }
+
+        function yapiPOST(){
+            axios.post("http://yapi.demo.qunar.com/mock/90301/axios/post").then(function (res){
+                console.log(res.data);
+            });
+        }
+    </script>
+    <!-- 引入axios依赖 -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.js"></script>
+</body>
+</html>
